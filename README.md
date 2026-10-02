@@ -1,37 +1,35 @@
 # Morse Code Maker
 
-A free, client-side Morse code translator and trainer that runs entirely in your browser. Type text and instantly see the Morse code output — or decode Morse back into plain text — with playback, a dark mode, and zero server calls.
+A single-file web app that converts text to Morse code (and back) right in the
+browser — with audio playback, visual signal flashing, and copy support.
+100% client-side: no build step, no dependencies, no server.
 
 ## Features
 
-- **Two-way conversion** — text to Morse code and Morse code back to text
-- **Audio playback** — hear the dots and dashes with Web Audio API tones
-- **Dark / light mode** — theme toggle with a modern, responsive UI
-- **Copy to clipboard** — one-click copy of the translated output
-- **100% client-side** — no backend, no tracking, works offline after first load
+- **Text → Morse** — type anything and get the dot-dash encoding instantly
+- **Morse → Text** — decode Morse input back to readable text
+- **Audio playback** — hear the Morse signal via the Web Audio API
+- **Visual signaling** — flashing indicator for dot/dash timing
+- **Zero setup** — one HTML file; open it or host it anywhere
 
-## Tech Stack
+## Tech stack
 
-- Vanilla HTML5, CSS3, JavaScript
-- Font Awesome icons (CDN)
-- Web Audio API for sound playback
+- HTML5, CSS, JavaScript (vanilla — no frameworks)
+- Web Audio API for sound generation
 
-## Quick Start
+## Quick start
 
-Open `morse-code-maker.html` directly in any modern browser — no build step, no server required. Everything runs locally on your machine.
+Open `index.html` in any browser, or serve the folder with any static server:
 
-## Project Structure
-
-```
-├── morse-code-maker.html   # Full app: UI, styles, and translation logic in one file
-├── LICENSE
-└── README.md
+```bash
+npx serve .
 ```
 
-## Deploy Notes
+## Deploy notes
 
-Single-file static app — deploy by serving `morse-code-maker.html` (or renaming it to `index.html`) on any static host: GitHub Pages, Cloudflare Pages, Netlify, or Vercel. No build step and no environment variables needed.
+Plain static — served from `index.html` at the repo root. Works on GitHub Pages,
+Cloudflare Pages, Netlify, or any static host. No environment variables required.
 
 ---
 
-Built by [Girish Lade](https://ladestack.in) — free developer tools at [ladestack.in](https://ladestack.in)
+Built by [Girish Lade](https://ladestack.in) · https://ladestack.in
